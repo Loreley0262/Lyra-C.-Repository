@@ -7,7 +7,7 @@ public class Schedule {
 
         System.out.println(" ");
         System.out.println(" ");
-        
+
 
         System.out.println("This is room # " + a);
         System.out.println("e is close to " + b);
