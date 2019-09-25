@@ -6,29 +6,31 @@ public class StringAssignment{
 
         Scanner scan = new Scanner(System.in);
 
-        //System.out.println("choose number");
-        //String num = scan.next();
-        //System.out.println(num);
+        System.out.println("What's your name?");
+        String name = scan.next();
+        System.out.println("Hello " + name + ", hope you have a nice day!");
 
         //----------------------------------------------------------------------------
 
+        // \t is four spaces
 
-        System.out.println(" --------------------------------------------- ");
+        System.out.println("+---------------------------------------------+");
         System.out.println("|#############################################|");
-        System.out.println("|\t##########################################|");
+        System.out.println("|###########\t\t\t\t\t   ###########|");
+        System.out.println("|########\t\t\t\t\t\t\t  ########|");
+        System.out.println("|#######\t\t\t\t\t\t\t   #######|");
+        System.out.println("|#######\t\t#####\t  #####\t\t   #######|");
+        System.out.println("|#######\t   #\t #   #\t   #\t   #######|");
+        System.out.println("|#######\t   #\t #   #\t   #\t   #######|");
+        System.out.println("|#######\t\t#####\t  #####\t\t   #######|");
+        System.out.println("|#######\t\t\t\t\t\t\t   #######|");
+        System.out.println("|#######\t\\\\\t\t\t\t\t  //   #######|");
+        System.out.println("|#######\t \\\\\t\t\t\t\t //    #######|");
+        System.out.println("|#######\t  \\\\\t\t\t\t//\t   #######|");
+        System.out.println("|########\t\t################\t  ########|");
+        System.out.println("|##########\t\t\t\t\t\t\t##########|");
         System.out.println("|#############################################|");
-        System.out.println("|#############################################|");
-        System.out.println("|#############################################|");
-        System.out.println("|#############################################|");
-        System.out.println("|#############################################|");
-        System.out.println("|#############################################|");
-        System.out.println("|#############################################|");
-        System.out.println("|#############################################|");
-        System.out.println("|#############################################|");
-        System.out.println("|#############################################|");
-        System.out.println("|#############################################|");
-        System.out.println("|#############################################|");
-        System.out.println(" --------------------------------------------- ");
+        System.out.println("+---------------------------------------------+");
 
     }
 
