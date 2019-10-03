@@ -32,6 +32,7 @@ public class StringAssignment{
         System.out.println("|#############################################|");
         System.out.println("+---------------------------------------------+");
 
+        System.out.println("WOW! I did it!");
     }
 
 }

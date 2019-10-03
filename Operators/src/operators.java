@@ -69,6 +69,10 @@ public class operators {
         System.out.println(true + "\n");
 
         System.out.println("It's the end! Yay!");
+
+        System.out.println();
+        //if must be boolean!!!
+        if ()
     }
 
 }
