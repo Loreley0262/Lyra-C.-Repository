@@ -44,6 +44,5 @@ public class Program6 {
 
                 }
             }
-        System.out.println("YAY YOU DID IT!");
     }
 }
