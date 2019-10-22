@@ -28,7 +28,7 @@ public class Program6 {
         int i = 0;
         for (i=0; i<=nums[1]; i++){
 
-            if (i%7==0 && i!=0 && i>nums[0]){
+            if (i%7==0 && i!=0 && i>=nums[0]){
                 System.out.println(i+ " is divisible by 7.");
                 hoia++;
             }
@@ -36,11 +36,11 @@ public class Program6 {
 
             if (i>=nums[1]){
                 if (hoia == 1){
-                    System.out.println("There is " + hoia + " factor between " + nums[0] + " and " + nums[1] + ".");
+                    System.out.println("There is " + hoia + " factor of 7 between " + nums[0] + " and " + nums[1] + ".");
                 }
 
                 else {
-                    System.out.println("There are " + hoia + " factors between " + nums[0] + " and " + nums[1] + ".");
+                    System.out.println("There are " + hoia + " factors of 7 between " + nums[0] + " and " + nums[1] + ".");
 
                 }
             }
