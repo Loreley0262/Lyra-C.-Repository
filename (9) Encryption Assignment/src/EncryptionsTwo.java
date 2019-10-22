@@ -5,34 +5,38 @@ public class EncryptionsTwo {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        char[] basetexttt = "abcdefghijklmnopqrstuvwxyz".toCharArray();
-        char[] ciphertext = "defghijklmnopqrstuvwxyzabc".toCharArray();
+        char[] basetexttt = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`1234567890-=~!@#$%^&*()_+[{]}|;:',<.>/?".toCharArray();
+        char[] ciphertext = "DEFGHIJKLMNOPQRSTUVWXYZABCdefghijklmnopqrstuvwxyzabc`1234567890-=~!@#$%^&*()_+[{]}|;:',<.>/?".toCharArray();
+
+        //variable list
+        //oneWord = word that becomes decrypted
+        //twoWord = word to be decrypted
+        //i, j, k, num = counters for the for loop.
+
 
         //this is encryption
-        System.out.println("Enter the word you want to encrypt with the substitution cipher. Only one word please!");
+        System.out.println("What would you like to encrypt? Please don't add spaces, but almost anything else is fine!");
         char[] oneWord = scan.next().toCharArray();
-        System.out.println(oneWord);
-        for (int i=0; i<oneWord.length; i++){
+        for (int i = 0; i < oneWord.length; i++) {
+            for (int j = 0; j < basetexttt.length; j++) {
+                if (oneWord[i] == basetexttt[j]) {
+                    System.out.print(ciphertext[j]);
+                    break;
+                }
+            }
+        }
 
-            for (int isIt=0; isIt<basetexttt.length; isIt++){
-                int a = 0;
-                if (oneWord[a] == basetexttt[isIt]){
-                    System.out.print(ciphertext[isIt]);
-                    a++;
+            //this is decryption
+        System.out.println("\nWhat would you like to decrypt? Please don't add spaces, but almost anything else is fine!");
+            char[] twoWord = scan.next().toCharArray();
+            for (int k = 0; k < twoWord.length; k++) {
+                for (int num = 0; num < ciphertext.length; num++) {
+                    if (twoWord[k] == ciphertext[num]) {
+                        System.out.print(basetexttt[num]);
+                        break;
+                    }
                 }
             }
 
-        }
-
-        //this is decryption
-        System.out.println("Enter the word you want to decrypt with the substitution cipher. Only one word please!");
-        char[] twoWord = scan.next().toCharArray();
-        System.out.println(twoWord);
-        for (int i=0; i<twoWord.length; i++){
-            if (twoWord[i] == ciphertext[i]){
-                System.out.print(basetexttt[i]);
-            }
-        }
     }
 }
-

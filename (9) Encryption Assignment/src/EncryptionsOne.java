@@ -9,7 +9,7 @@ public class EncryptionsOne {
         String wordOne = scan.next();
         String letter = wordOne.substring(wordOne.length()-1);
         String encrypted = letter + wordOne + "\bay";
-        System.out.println("The encrypted word is:  " + encrypted);
+        System.out.println(encrypted);
 
         //decryption
         System.out.println("Enter the word you want to decrypt from the simple cipher. Only one word please!");
