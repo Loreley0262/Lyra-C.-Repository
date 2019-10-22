@@ -5,10 +5,11 @@ public class Main {
         Scanner scan = new Scanner(System.in);
 
 //        numOfSpaces = NUMBER OF SPACES
-//        byeByeYesterday = YESTERDAY
-//        hiHiToday = TODAY
+//        byeByeYesterday = YESTERDAY's space
+//        hiHiToday = TODAY's space
+//        sames = counter for correct thingy
 
-        int sames = 0;
+
         int numOfSpaces = 0;
 
         do {
@@ -26,17 +27,17 @@ public class Main {
         //        " input the status of the parking lot as it is today.");
         String hiHiToday = scan.next();
 
-
-
+        int sames = 0;
+        int hoia = 0; //testing
         for (int i = 0; i < numOfSpaces; i++) {
-            String yesterdayC = byeByeYesterday.substring(i);
-            String todayC = byeByeYesterday.substring(i);
-            if (yesterdayC == todayC) {
-                if (yesterdayC.equals("C"))
+            String yesterdayC = byeByeYesterday.substring(i, i+1);
+            String todayC = byeByeYesterday.substring(i, i+1);
+            if (yesterdayC.equals(todayC) && yesterdayC.equals("C")) {
                 sames++;
             }
         }
         System.out.println(sames);
+
     }
 }
 
