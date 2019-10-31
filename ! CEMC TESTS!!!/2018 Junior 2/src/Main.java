@@ -31,9 +31,11 @@ public class Main {
         int hoia = 0; //testing
         for (int i = 0; i < numOfSpaces; i++) {
             String yesterdayC = byeByeYesterday.substring(i, i+1);
-            String todayC = byeByeYesterday.substring(i, i+1);
-            if (yesterdayC.equals(todayC) && yesterdayC.equals("C")) {
-                sames++;
+            String todayC = hiHiToday.substring(i, i+1);
+            if (yesterdayC.equals("C")) {
+                if (yesterdayC.equals(todayC)) {
+                    sames++;
+                }
             }
         }
         System.out.println(sames);

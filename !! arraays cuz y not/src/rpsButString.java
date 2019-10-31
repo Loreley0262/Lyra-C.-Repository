@@ -3,6 +3,8 @@ import java.util.Scanner;
 public class rpsButString {
     public static void main(String[] args) {
 
+        //You can find this as "RPS but looped" too.
+
         Scanner scan = new Scanner(System.in);
         boolean asdf = true;
         boolean fdsa = false;
