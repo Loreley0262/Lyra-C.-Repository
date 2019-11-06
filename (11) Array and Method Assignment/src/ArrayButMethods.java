@@ -1,74 +1,76 @@
 public class ArrayButMethods {
-    //Add values to the end of an array. (-----DONE?-----)
-    //Delete values from the end of an array (often referred to as pop).  Array size should shrink by one.(-----DONE?-----)
-    //Insert values into an array at chosen index position.(-----DONE?-----)
+    //Add values to the end of an array. (-----addToArray-----)
+    //Delete values from the end of an array (often referred to as pop).  Array size should shrink by one.(-----delFromArray-----)
+    //Insert values into an array at chosen index position.(-----putIntoArray-----)
             //(Increases the size of the array by 1 Ex. array 2, 3, 5.  Insert 4 into position 2 gives 2,3,4,5)
 
     public static void main(String[] args) {
-       addToArray();
-       delFromArray();
-       putIntoArray();
+        int l = 3;
+        int m = l+1;
+        int n = l-1;
+       addToArray(l, m);
+       delFromArray(l, n);
+       putIntoArray(l, m);
     }
-    
 
-    public static void addToArray(){
-        int k = 3;
-        int[] ayray = new int[k];
+    public static void addToArray(int k, int nom){
+        System.out.print("origArray   =  ");
+        int[] origArray = new int[k];
         for (int i=0; i<k; i++) {
-            ayray[i] = i;
-            System.out.println(ayray[i]);
+            origArray[i] = i; //OPTIONS!
+            System.out.print("\t["+i+"]"+ "=" +origArray[i]);
         }
-        int nom= k+1;
-        int[] rayray = new int[nom];
+        System.out.print("\nmoddedArray =  \b");
+        int[] moddedArray = new int[nom];
         for (int i=0; i<nom; i++) {
             if (i==k){
-                rayray[i] = i;
+                moddedArray[i] = i;
             }
             else{
-                rayray[i] = ayray[i];
+                moddedArray[i] = origArray[i];
             }
-            System.out.println(rayray[i]);
+            System.out.print("\t["+i+"]"+ "=" +moddedArray[i]);
         }
-        System.out.println("----------------------------");
+        System.out.println("\n----------------------------\n");
     }
 
-    public static void delFromArray(){
-        int k = 3;
-        int[] ayray = new int[k];
+    public static void delFromArray(int k, int nom){
+        System.out.print("origArray   =  ");
+        int[] origArray = new int[k];
         for (int i=0; i<k; i++) {
-            ayray[i] = i;
-            System.out.println(ayray[i]);
+            origArray[i] = i;
+            System.out.print("\t["+i+"]"+ "=" +origArray[i]);
         }
-        int nom= k-1;
-        int[] rayray = new int[nom];
+        System.out.print("\nmoddedArray =  \b");
+        int[] moddedArray = new int[nom];
         for (int i=0; i<nom; i++) {
-            rayray[i] = ayray[i];
-            System.out.println(rayray[i]);
+            moddedArray[i] = origArray[i];
+            System.out.print("\t["+i+"]"+ "=" +moddedArray[i]);
         }
-        System.out.println("----------------------------");
+        System.out.println("\n----------------------------\n");
     }
 
-    public static void putIntoArray(){
-        int k = 3;
-        int[] ayray = new int[k];
+    public static void putIntoArray(int k, int nom){
+        System.out.print("origArray   =  ");
+        int[] origArray = new int[k];
         for (int i=0; i<k; i++) {
-            ayray[i] = i;
-            System.out.println(ayray[i]);
+            origArray[i] = i;
+            System.out.print("\t["+i+"]"+ "=" +origArray[i]);
         }
-        int nom= k+1;
-        int[] rayray = new int[nom];
+        System.out.print("\nmoddedArray =  \b");
+        int[] moddedArray = new int[nom];
         for(int i=0; i<nom; i++){
             if (i<1){
-                rayray[i] = ayray[i];
+                moddedArray[i] = origArray[i];
             }
             if (i==1){
-                rayray[i]= nom;
+                moddedArray[i]= nom;
             }
 
             if(i>1){
-                rayray[i] = ayray[i-1];
+                moddedArray[i] = origArray[i-1];
             }
-            System.out.println(rayray[i]);
+            System.out.print("\t["+i+"]"+ "=" +moddedArray[i]);
         }
     }
 
