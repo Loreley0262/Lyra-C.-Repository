@@ -5,10 +5,10 @@ public class ArrayButMethods {
             //(Increases the size of the array by 1 Ex. array 2, 3, 5.  Insert 4 into position 2 gives 2,3,4,5)
 
     public static void main(String[] args) {
-        int k = 6; //Length of the original array
-       addToArray(k, k+2);
-       delFromArray(k, k-2);
-       putIntoArray(k, k-2);
+        int k = 3; //Length of the original array
+       addToArray(k, k+3);
+       delFromArray(k, k-1);
+       putIntoArray(k, k-1);
     }
 
     public static void addToArray(int k, int num){
