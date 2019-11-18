@@ -4,16 +4,34 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int[] city = new int[5];
-        int[] distances = new int[5];
+        int[] misc = new int[5];
         city[0]=0;
-        for (int i=1; i<4; i++){
+        for (int i=1; i<5; i++){
             city[i] = scan.nextInt();
-            System.out.print(city[i] + " ");
         }
-        for (int i=0; i<5; i++){
-            distances[i] = city[i]+city[i+1];
-            System.out.print(distances[i] + " ");
+        int k = 0;
+        for (int j=0; j<5; j++) {
+            for (int i = 0; i < 5; i++) {
+                if (i==k){
+                    misc[j]=0;
+                }
+                else{
+                    misc[j] = misc[j] + city[k] + city[i];
+                }
+                System.out.print(misc[j] + "\t");
+            }
+            System.out.println("\n");
+            k++;
         }
-
     }
 }
+/*
+  misc[j] = misc[j] + city[1] + city[i];
+
+ 1-0 =
+ 1-1 =
+ 1-2 =
+ 1-3 =
+ 1-4 =
+
+*/
