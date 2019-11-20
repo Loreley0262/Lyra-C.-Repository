@@ -13,7 +13,6 @@ public class EncryptionsTwo {
         //twoWord = word to be decrypted
         //i, j, k, num = counters for the for loop.
 
-
         //this is encryption
         System.out.println("What would you like to encrypt? Please don't add spaces, but almost anything else is fine!");
         char[] oneWord = scan.next().toCharArray();
