@@ -1,7 +1,5 @@
 import java.util.Scanner;
-
-public class Main {
-    /* s = lowercase characters
+/* s = lowercase characters
       1:
         find # o/vowels in s
             vowels= a,e,i,o,u
@@ -22,15 +20,17 @@ public class Main {
         String name = "Patrick Stewart";
         String lastName = name.substring(8,15);
      */
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner (System.in);
+        problemOne("azcbobobegghakl");
+
+    }
+
     static int myMethod(int x) {
         return 5 + x;
     }
 
-    public static void main(String[] args) {
-        Scanner scan = new Scanner (System.in);
-        problemOne("hello");
-
-    }
     static int problemOne(String s){
         int answer = 0;
         char[] one = new char[s.length()];
@@ -48,13 +48,6 @@ public class Main {
         //your code here
         return s;
     }
-//    String str = "GeeksForGeeks";
-//    // Creating array of string length
-//    char[] ch = new char[str.length()];
-//    // Copy character by character into array
-//        for (int i = 0; i < str.length(); i++) {
-//        ch[i] = str.charAt(i);
-//    }
 
     /*
         Set s to a string and run your method using s as the parameter
