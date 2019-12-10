@@ -24,65 +24,42 @@ public class Main {
     }
 
 static String problemThree (String s) {           //azcbobobegghakl
-    char[] alphabet = "abcdefghijklmnopqrstuvwxyz".toCharArray();
-    char[] betabet = "accbcde".toCharArray();
+    char[] betabet = s.toCharArray();
     String se = "";
     String ss = "";
     boolean tOrF = false;
-    for (int j = 0; j<betabet.length; j++) {
-        for (int i=0;i<alphabet.length; i++) {
-            if ((betabet[j] == alphabet[i] && i>=j)||(ss.equals(""))) {
+    for (int j = 0; j < betabet.length; j++) {
+        for (int i = 0; i < 2; i++) {
+            if (ss.equals("")) {
                 ss = ss + betabet[j];
                 break;
-            }
-            else if (betabet[j] == alphabet[i] && i<=j){
-                tOrF = true;
+            } else if (betabet[j] >= betabet[j - 1]) {
+                ss = ss + betabet[j];
                 break;
+            } else {
+                if (ss.length() > se.length()) {
+                    se = ss;
+                }
+                ss = "";
             }
         }
-
-        if(tOrF){
-            if (ss.length()>=se.length()){
-                se=ss;
-                ss="";
-                tOrF = false;
-                j--;
-            }
-        }
-
     }
-
+    if (ss.length() > se.length()) {
+        se = ss;
+    }
     return se;
 }
 
-//if (ss.length()>=se.length())     ----------
+
 
 
 
 
 /*
-beta=ababc
-j=0;++
-i=0;++
-betaj==alphai&&i>=j
-a==a&&0>=0
-    ___=___+a
-b==b&&1>=1
-    ab
-a==c&&2>=2
-    restart but with beta1 not beta0
+beta=3 (j)
+alpha=2 (i)
 
  */
-/*
-for j
-   compare jst beta to jst alpha
-   if before
-    start new yee
-   j++
-
-compare strlens of yee
-sout yee w/longest strlen
-*/
 
 
     /*
@@ -100,10 +77,7 @@ sout yee w/longest strlen
         The tests will put your method through several different Strings to test
         all possible cases.  If you have 100% success then there is no bugs in your methods.
          */
-        String s = "azcbobobegghakl";
-        problemOne(s);
-        problemTwo(s);
-        problemThree(s);
+        String s = "tunivklq";
         System.out.println("Number of vowels: " + problemOne(s));
         System.out.println("Number of times bob occurs is: " + problemTwo(s));
         System.out.println("Longest substring in alphabetical order is: " + problemThree(s));

@@ -1,12 +1,19 @@
-import java.util.Comparator;
-
 public class tst {
     public static void main(String[] args) {
-        String a = "hoi";
-        String b = "hello";
-        Comparator<String> strlenComp = int.compare(a.length(), b.length());
-        System.out.println(strlenComp);
+        char[] alphabet = "abcdefghijklmnopqrstuvwxyz".toCharArray();
+        char[] betabet = "azcbobobegghakl".toCharArray();
 
-       // Comparator<String> strlenComp = (a, b) -> Integer.compare(a.length(), b.length());
+        if (betabet[0]>=alphabet[1]){
+            System.out.println("yee");
+        }
+        else{
+            System.out.println("noo");
+        }
+
+        /* this works because individual chars in the char array (so the letters themselves) have a value in ASCII
+         so a=65, etc
+         so you can compare the nums (a65) to (b66)
+         to see alphaorders
+        */
     }
 }
