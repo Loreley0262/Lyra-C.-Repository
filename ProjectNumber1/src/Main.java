@@ -25,29 +25,28 @@ public class Main {
 
 static String problemThree (String s) {           //azcbobobegghakl
     char[] betabet = s.toCharArray();
-    String se = "";
-    String ss = "";
-    boolean tOrF = false;
+    String finish = "";
+    String start = "";
     for (int j = 0; j < betabet.length; j++) {
-        for (int i = 0; i < 2; i++) {
-            if (ss.equals("")) {
-                ss = ss + betabet[j];
+        for (int i = 0; i < 1; i++) {
+            if (start.equals("")) {
+                start = start + betabet[j];
                 break;
             } else if (betabet[j] >= betabet[j - 1]) {
-                ss = ss + betabet[j];
+                start = start + betabet[j];
                 break;
             } else {
-                if (ss.length() > se.length()) {
-                    se = ss;
+                if (start.length() > finish.length()) {
+                    finish = start;
                 }
-                ss = "";
+                start  = "";
             }
         }
     }
-    if (ss.length() > se.length()) {
-        se = ss;
+        if (start.length() > finish.length()) {
+        finish = start;
     }
-    return se;
+    return finish;
 }
 
 
