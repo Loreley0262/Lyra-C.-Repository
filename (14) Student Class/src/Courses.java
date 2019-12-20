@@ -1,27 +1,28 @@
 public class Courses {
     String name;
-    int grade;
+    int beforeGrade;
 
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
-    public int getGrade() {
-        return grade;
+    public int getBeforeGrade() {
+        return beforeGrade;
+    }
+    public void setBeforeGrade(int beforeGrade) {
+        this.beforeGrade = beforeGrade;
     }
 
-    public void setGrade(int grade) {
-        this.grade = grade;
-    }
+
+
+
 
     Courses(String name, int grade){
         this.name = name;
-        this.grade = grade;
+        this.beforeGrade = grade;
+        beforeGrade++;
     }
-
 
 }
