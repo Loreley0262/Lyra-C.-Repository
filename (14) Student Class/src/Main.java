@@ -9,7 +9,7 @@ public class Main {
         bobCourses.add(new Courses("gui", 90));    // 2
         bobCourses.add(new Courses("ss", 100));     // 3
         Student bob = new Student("Bob", 0);
-        System.out.println(bob.toString());
+        System.out.println(bob);
         System.out.println(bobCourses.get(0));
 
         ArrayList<Courses> johnCourses = new ArrayList<>();
@@ -18,17 +18,21 @@ public class Main {
         johnCourses.add(new Courses("gui", 10));    // 2
         johnCourses.add(new Courses("ss", 10));     // 3
         Student john = new Student("John", 0);
-        System.out.println(john.toString());
+        System.out.println(john);
         System.out.println(johnCourses.get(2));
 
+
+        System.out.println();
+        System.out.println();
         System.out.println((50+30+90+100) / 4);
         int avg = 0;
-        System.out.println(bobCourses.);
+
         //for (int i = 0; i<bobCourses.size(); i++){
         //     avg = avg + ;
         // }
 
         System.out.println(bobCourses.size());
+        System.out.println(johnCourses.asdf); //in courses class, fix!
 
     }
 

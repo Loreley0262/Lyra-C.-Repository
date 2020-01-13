@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 
 public class Student {
 
@@ -16,8 +15,9 @@ public class Student {
 
 
     public String toString(){
-        return "Name: " + getName() + "\nID: " + getIden();
+        return "Name: " + getName() + "\tID: " + getIden();
     }
+
 
     Student(String firstName, int id){
         iden = id;

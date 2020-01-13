@@ -5,21 +5,20 @@ public class Courses {
     public String getName() {
         return name;
     }
-    public void setName(String name) {
-        this.name = name;
-    }
     public int grade() {
         return grade;
     }
-    public void setGrade(int grade) {
-        this.grade = grade;
+    public int getGrade() {
+        return grade;
     }
 
     public String toString(){
         return "Subject: " + getName();
     }
 
-
+    public int asdf(){
+        return this.grade;
+    }
 
     Courses(String name, int grade){
         this.name = name;
