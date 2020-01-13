@@ -1,32 +1,29 @@
+import java.util.ArrayList;
+
 public class Student {
 
-    public static int getIdent() {
-        return ident;
-    }
-    public static void setIdent(int ident) {
-        Student.ident = ident;
-    }
+    private static int iden;
+    private String name;
 
-    static int ident;
-    int beforeId;
-    String name;
 
-    public int getBeforeId() {
-        return beforeId;
-    }
-    public void setBeforeId(int beforeId) {
-        this.beforeId = beforeId;
+    public int getIden() {
+        return iden;
     }
     public String getName() {
         return name;
     }
-    public void setName(String name) {
-        this.name = name;
+
+
+
+    public String toString(){
+        return "Name: " + getName() + "\nID: " + getIden();
     }
 
-    Student(String firstName, int ident){
-        this.beforeId = this.ident;
+    Student(String firstName, int id){
+        iden = id;
         this.name = firstName;
-        this.beforeId++;
+
     }
+
+
 }

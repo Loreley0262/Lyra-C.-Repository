@@ -7,6 +7,8 @@ public class Circle {
         this.radius = radius;
     }
 
+    private double radius;
+
     public double getArea(){
         return Math.PI * Math.pow(radius, 2);
     }
@@ -16,12 +18,12 @@ public class Circle {
     public String toString(){
         return "Circle[radius = " + radius + "]";
     }
-    private double radius;
+
+
 
     Circle(){
         this.radius = 1;
     }
-
 
 
 }

@@ -1,6 +1,6 @@
 public class Courses {
     String name;
-    int beforeGrade;
+    int grade;
 
     public String getName() {
         return name;
@@ -8,21 +8,22 @@ public class Courses {
     public void setName(String name) {
         this.name = name;
     }
-    public int getBeforeGrade() {
-        return beforeGrade;
+    public int grade() {
+        return grade;
     }
-    public void setBeforeGrade(int beforeGrade) {
-        this.beforeGrade = beforeGrade;
+    public void setGrade(int grade) {
+        this.grade = grade;
     }
 
-
+    public String toString(){
+        return "Subject: " + getName();
+    }
 
 
 
     Courses(String name, int grade){
         this.name = name;
-        this.beforeGrade = grade;
-        beforeGrade++;
+        this.grade = grade;
     }
 
 }
