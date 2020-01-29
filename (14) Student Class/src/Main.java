@@ -32,7 +32,11 @@ public class Main {
         // }
 
         System.out.println(bobCourses.size());
-        System.out.println(johnCourses.asdf); //in courses class, fix!
+        System.out.println(johnCourses); //in courses class, fix!
+
+/*        for (Test c : cars){ //colon is "in" so c is like i but for every car?
+            System.out.println(c);
+*/        }
 
     }
 
