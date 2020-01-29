@@ -1,4 +1,10 @@
 public class Student {
+    /*
+    The Student class is where data about the students is stored. It contains the first, last, and full names of students,
+    the grade each student is in, the id number of each student, the toString method to print the name and grade of each student,
+    and the Student constructor to create new students. This class is also used to create the students array list in the School class.
+    */
+
     public String getlName() {
         return lName;
     }
@@ -23,12 +29,6 @@ public class Student {
     public void setGrade(int grade) {
         this.grade = grade;
     }
-
-    String fName;
-    String lName;
-    String name;
-    int grade;
-
     public static int getId() {
         return id;
     }
@@ -36,27 +36,20 @@ public class Student {
         Student.id = id;
     }
 
+    String fName;
+    String lName;
+    String name;
+    int grade;
     static int id;
 
-    public int getIden() {
-        return iden;
-    }
-    public void setIden(int iden) {
-        this.iden = iden;
+
+    public String toString(){       //toString method prints the name and grade of the student
+        return "Name: " + getName() + " Grade: " + grade;
     }
 
-    int iden;
-
-    public String toString(){
-        return "Name: " + getName() + " Grade: " + grade + "id(temp)" + id;
-    }
-
-    Student (String fName, String lName, int grade){
+    Student (String fName, String lName, int grade){        //Student constructor creates new students with a first and last name and grade.
         this.fName = fName;
         this.lName = lName;
         this.grade = grade;
-        this.iden = id;
-        id = iden;
-        iden++;
     }
 }
