@@ -19,10 +19,9 @@ public class Student {
     }
 
 
-    Student(String firstName, int id){
-        iden = id;
+    Student(String firstName){
         this.name = firstName;
-
+        iden++;
     }
 
 

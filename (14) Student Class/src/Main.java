@@ -8,7 +8,7 @@ public class Main {
         bobCourses.add(new Courses("sci", 30));    // 1
         bobCourses.add(new Courses("gui", 90));    // 2
         bobCourses.add(new Courses("ss", 100));     // 3
-        Student bob = new Student("Bob", 0);
+        Student bob = new Student("Bob");
         System.out.println(bob);
         System.out.println(bobCourses.get(0));
 
@@ -17,7 +17,7 @@ public class Main {
         johnCourses.add(new Courses("sci", 10));    // 1
         johnCourses.add(new Courses("gui", 10));    // 2
         johnCourses.add(new Courses("ss", 10));     // 3
-        Student john = new Student("John", 0);
+        Student john = new Student("John");
         System.out.println(john);
         System.out.println(johnCourses.get(2));
 
@@ -36,10 +36,9 @@ public class Main {
 
 /*        for (Test c : cars){ //colon is "in" so c is like i but for every car?
             System.out.println(c);
-*/        }
-
+*/
     }
 
-
-
 }
+
+
