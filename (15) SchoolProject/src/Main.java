@@ -3,7 +3,7 @@ public class Main {
 
         //The main class is the where you call and use code stored in other classes.
 
-        School windi = new School("Windi", 39, 1);  //made a school object called "windi"
+        School windi = new School("Windi", 39, 1);  //made a school called "windi"
 
         for (int i = 0; i<10; i++){ // adding 10 students to the school "windi"
             windi.addStudent();
