@@ -7,7 +7,7 @@ public class Time {
     private int minute;
     private int second;
 
-    Time(int hour, int minute, int second){    //School constructor creates new schools, each with a name, district, and id number.
+    Time(int hour, int minute, int second) {    //Time constructor creates a clock.
         this.hour = hour;
         this.minute = minute;
         this.second = second;
@@ -31,37 +31,49 @@ public class Time {
     public void setSecond(int second) {
         this.second = second;
     }
-    public void setTime(int hour, int minute, int second) {
-        System.out.println("input hour (24hr clock)");
-        this.hour = scan.nextInt();
-        System.out.println("input minute");
-        this.minute = scan.nextInt();
-        System.out.println("input second");
-        this.second = scan.nextInt();
 
-        if (this.second<0){
-            this.second = 0;
+    public void setTime(int hour, int minute, int second) {
+        this.hour = hour;
+        this.minute = minute;
+        this.second = second;
+    }
+
+    public String toString() {           //toString method prints the time
+        if (this.second < 0) {
+            this.second = 59;
+            this.minute--;
         }
-        if (this.second>59){
+        if (this.second > 59) {
             this.second = 0;
             this.minute++;
         }
-        if (this.minute<0){
-            this.minute = 0;
+        if (this.minute < 0) {
+            this.minute = 59;
+            this.hour--;
         }
-        if (this.minute>59){
+        if (this.minute > 59) {
             this.minute = 0;
             this.hour++;
         }
-        if (this.hour<0){
+        if (this.hour < 0) {
             this.hour = 0;
         }
-        if (this.hour>23){
+        if (this.hour == 24) {
             this.hour = 0;
         }
+        if (this.hour > 24) {
+            this.hour = 1;
+        }
+        return getHour() + ":" + getMinute() + ":" + getSecond();
     }
 
-    public String toString(){           //toString method prints the name and subject taught by the teacher
-        return getHour()+":"+getMinute()+":"+getSecond();
+    public void nextSecond() {
+        this.second++;
+        System.out.println(this.toString());
+    }
+
+    public void previousSecond() {
+        this.second--;
+        System.out.println(this.toString());
     }
 }
