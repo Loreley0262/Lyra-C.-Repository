@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad995523-1fe8-433b-9a56-721eda2588d9" name="Default Changelist" comment="" />
+    <list default="true" id="cbf81434-b313-42a1-a015-d56fde63fd38" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,15 +10,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="889972866">
+    <session id="-1689144064">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -33,12 +29,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1566" />
+          <entry key="java" value="351" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1566" />
+          <entry key="JAVA" value="351" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1282999874">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1642695342">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -48,8 +62,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+            <state relative-caret-position="357">
+              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -91,32 +105,27 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Exactly Electrical" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2017 Junior 3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Exactly Electrical" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2017 Junior 3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="QuadrantSelection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Junior 1 2017" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573766314837" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572555730522" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../2018 Junior 3 (Are We There Yet)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -135,7 +144,7 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Exactly Electrical" />
+      <module name="QuadrantSelection" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -151,25 +160,25 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ad995523-1fe8-433b-9a56-721eda2588d9" name="Default Changelist" comment="" />
-      <created>1572557551590</created>
+      <changelist id="cbf81434-b313-42a1-a015-d56fde63fd38" name="Default Changelist" comment="" />
+      <created>1572554953586</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1572557551590</updated>
-      <workItem from="1572557555900" duration="1671000" />
-      <workItem from="1572903773743" duration="266000" />
-      <workItem from="1573590088675" duration="4698000" />
-      <workItem from="1573762657888" duration="3174000" />
+      <updated>1572554953586</updated>
+      <workItem from="1572554956276" duration="771000" />
+      <workItem from="1572555813322" duration="64000" />
+      <workItem from="1580842706705" duration="11000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9809000" />
+    <option name="totallyTimeSpent" value="846000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.260745" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25716332" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -178,7 +187,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32884097" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32884097" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -187,7 +196,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32884097" />
+      <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -208,8 +217,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        <state relative-caret-position="357">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
         </state>
       </provider>
     </entry>
