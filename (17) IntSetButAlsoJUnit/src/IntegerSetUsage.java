@@ -22,6 +22,10 @@ What will methods do?
         IntegerSet intset = new IntegerSet();
         System.out.println(intset.size());
         intset.insert(3);
+        intset.insert(9);
+        intset.remove(3);
+        System.out.println(intset.size());
+        System.out.println(intset.contains(3));
 
 
     }
