@@ -4,7 +4,7 @@ public class TheatreUsage {
         Theatre test = new Theatre (60, firstRowAisleSeats, 5);
         test.purchaseSeat(10);
         test.getSeatsRemaining();
-        test.isAisle();
+        test.isAisle(1);
         test.isPurchased(2);
         test.getSize();
 

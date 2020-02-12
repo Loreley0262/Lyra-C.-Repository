@@ -41,4 +41,13 @@ public class TheatreTests {
             }
         }
     }
+
+    @Test
+    public void testIsAisle(){
+        assertTrue(test.isAisle(3));
+        assertTrue(test.isAisle(46));
+        assertFalse(test.isAisle(7));
+        assertFalse(test.isAisle(19));
+
+    }
 }

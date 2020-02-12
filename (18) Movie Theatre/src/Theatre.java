@@ -34,7 +34,9 @@ public class Theatre {
     //Modifies: this (the intsets)
     //Effects: if seat is in remaining intset put it into occupied intset, else do nothing
     public void purchaseSeat(Integer seatNum){
-
+        if (seatsRemaining.contains(seatNum)){
+            occupiedSeats
+        }
     }
 
     //Effects: returns seats remaining in theatre
@@ -59,7 +61,3 @@ public class Theatre {
         return 42;
     }
 }
-
-
-test.isPurchased(2);
-        test.getSize();
