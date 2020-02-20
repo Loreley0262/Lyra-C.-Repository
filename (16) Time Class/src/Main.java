@@ -7,5 +7,6 @@ public class Main {
         clock.previousSecond();
         clock.setHour(79);
         System.out.println(clock);
+        System.out.println("asdf");
     }
 }
