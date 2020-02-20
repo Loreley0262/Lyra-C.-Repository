@@ -10,8 +10,8 @@ public class TheatreTests {
 
     @Before
     public void setUp(){
-        int[] firstRowAisleSeats = {2, 3, 10, 11};
-        test = new Theatre(60, firstRowAisleSeats, 5);
+        int[] firstRowAisleSeats = {3, 4};
+        test = new Theatre(60, firstRowAisleSeats, 10);
     }
 
     @Test

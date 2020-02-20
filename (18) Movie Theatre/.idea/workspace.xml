@@ -30,12 +30,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2187" />
+          <entry key="java" value="2554" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2187" />
+          <entry key="JAVA" value="2554" />
         </counts>
       </usages-collector>
     </session>
@@ -51,14 +51,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Theatre.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="61" column="35" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+            <state relative-caret-position="408">
+              <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
               <folding>
-                <element signature="e#1603#1604#0" expanded="true" />
-                <element signature="e#1631#1632#0" expanded="true" />
                 <element signature="e#1973#1974#0" expanded="true" />
                 <element signature="e#1998#1999#0" expanded="true" />
               </folding>
@@ -67,23 +65,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/IntegerSet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
-              <folding>
-                <element signature="e#1090#1091#0" expanded="true" />
-                <element signature="e#1131#1132#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/IntSetTestCopy/TheatreTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+            <state relative-caret-position="541">
+              <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,9 +93,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/IntegerSet.java" />
         <option value="$PROJECT_DIR$/IntSetTestCopy/IntegerSetTest.java" />
-        <option value="$PROJECT_DIR$/IntSetTestCopy/TheatreTests.java" />
         <option value="$PROJECT_DIR$/src/TheatreUsage.java" />
         <option value="$PROJECT_DIR$/src/IntegerSetUsage.java" />
+        <option value="$PROJECT_DIR$/IntSetTestCopy/TheatreTests.java" />
         <option value="$PROJECT_DIR$/src/Theatre.java" />
       </list>
     </option>
@@ -175,13 +160,14 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582224883125" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582225976887" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../(16) Time Class" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -219,6 +205,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TheatreTests.testIsAisle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Movie Theatre" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TheatreTests" />
+      <option name="METHOD_NAME" value="testIsAisle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TheatreTests.testPurchaseSeat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Movie Theatre" />
       <option name="PACKAGE_NAME" value="" />
@@ -234,10 +230,12 @@
       <item itemvalue="Application.TheatreUsage" />
       <item itemvalue="JUnit.TheatreTests.testPurchaseSeat" />
       <item itemvalue="Application.IntegerSetUsage" />
+      <item itemvalue="JUnit.TheatreTests.testIsAisle" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TheatreTests" />
+        <item itemvalue="JUnit.TheatreTests.testIsAisle" />
         <item itemvalue="Application.TheatreUsage" />
         <item itemvalue="Application.IntegerSetUsage" />
         <item itemvalue="JUnit.TheatreTests.testPurchaseSeat" />
@@ -265,9 +263,18 @@
     <history-entry file="TheatreTests_testPurchaseSeat - 2020.02.20 at 10h 48m 02s.xml">
       <configuration name="TheatreTests.testPurchaseSeat" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TheatreTests - 2020.02.20 at 10h 53m 17s.xml">
+      <configuration name="TheatreTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TheatreTests_testIsAisle - 2020.02.20 at 11h 01m 20s.xml">
+      <configuration name="TheatreTests.testIsAisle" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TheatreTests_testIsAisle - 2020.02.20 at 11h 07m 35s.xml">
+      <configuration name="TheatreTests.testIsAisle" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4457000" />
+    <option name="totallyTimeSpent" value="5508000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -356,11 +363,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IntegerSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
+        <state relative-caret-position="-43">
           <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="e#1090#1091#0" expanded="true" />
             <element signature="e#1131#1132#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntSetTestCopy/TheatreTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -374,23 +391,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Theatre.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="61" column="35" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+        <state relative-caret-position="408">
+          <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
           <folding>
-            <element signature="e#1603#1604#0" expanded="true" />
-            <element signature="e#1631#1632#0" expanded="true" />
             <element signature="e#1973#1974#0" expanded="true" />
             <element signature="e#1998#1999#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IntSetTestCopy/TheatreTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -48,7 +48,18 @@ public class Theatre {
     //Requires: Integer, seat num
     //Effects: ret true if seat on aisle, else ret false
     public boolean isAisle(Integer seatNum){
-        return false;
+        int seatsPerRow = getSize()/totalRows;
+        return aisleSeats.contains(seatNum % seatsPerRow);
+
+//        int seatnum = seatNum;
+// return seatnum % 12 == 2 || seatnum % 12 == 3 || seatnum % 12 == 10 || seatnum % 12 == 11;  or use nums in firstRowAisleSeats to make shorter
+        //prolly only works for this example b/c fixed values (2, 3, etc)
+//        if (seatnum%12 == 2 || seatnum%12 == 3 || seatnum%12 == 10 || seatnum%12 == 11){/////you could use if statements, but this is faster b/c gives ans immediately
+//            return true;
+//        }
+//        else{
+//            return false;
+//        }
     }
 
     //Requires: Integer, seat num
