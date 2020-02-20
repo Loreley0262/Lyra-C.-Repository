@@ -18,7 +18,10 @@ public class Customer {
         //create default constructor
     }
     Customer(String name, int accountNumber, double checkDeposit, double savingDeposit){
-        //constructor code here
+        this.name = name;
+        this.accountNumber = accountNumber;
+        this.checkBalance = checkDeposit;
+        this.savingBalance = savingDeposit;
     }
 
     public double deposit(double amt, Date date, String account){
