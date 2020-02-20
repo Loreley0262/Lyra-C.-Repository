@@ -1,7 +1,5 @@
-import java.util.Scanner;
 
 public class Time {
-    Scanner scan = new Scanner(System.in);
 
     private int hour;
     private int minute;
@@ -56,7 +54,7 @@ public class Time {
             this.hour++;
         }
         if (this.hour < 0) {
-            this.hour = 0;
+            this.hour = 23;
         }
         if (this.hour == 24) {
             this.hour = 0;
@@ -64,7 +62,23 @@ public class Time {
         if (this.hour > 24) {
             this.hour = 1;
         }
-        return getHour() + ":" + getMinute() + ":" + getSecond();
+
+        String hr = this.hour + "";
+        String min = this.minute + "";
+        String sec = this.second + "";
+        if (this.hour < 10){
+            hr = "0"+ this.hour;
+        }
+        if (this.minute < 10){
+            min = "0"+ this.minute;
+        }
+        if (this.second < 10){
+            sec = "0"+ this.second;
+        }
+        if (this.hour < 10 || this.minute < 10 || this.second < 10){
+            return hr + ":" + min + ":" + sec;
+        }
+        return this.hour + ":" + this.minute + ":" + this.second;
     }
 
     public void nextSecond() {

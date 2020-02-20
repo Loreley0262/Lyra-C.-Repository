@@ -35,7 +35,8 @@ public class Theatre {
     //Effects: if seat is in remaining intset put it into occupied intset, else do nothing
     public void purchaseSeat(Integer seatNum){
         if (seatsRemaining.contains(seatNum)){
-            occupiedSeats
+            occupiedSeats.insert(seatNum);
+            seatsRemaining.remove(seatNum);
         }
     }
 
@@ -53,11 +54,11 @@ public class Theatre {
     //Requires: Integer, seat num
     //Effect: ret true if seat has been purchased, else ret false
     public boolean isPurchased(Integer seatNum){
-        return false;
+        return occupiedSeats.contains(seatNum);   ///you could use if statements, but this is faster b/c gives ans immediately
     }
 
     //Effects: ret num of remaining seats
     public int getSize(){
-        return 42;
+        return seatsRemaining.size() + occupiedSeats.size();
     }
 }
