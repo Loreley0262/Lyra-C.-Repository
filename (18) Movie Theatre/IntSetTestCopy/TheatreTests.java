@@ -48,6 +48,5 @@ public class TheatreTests {
         assertTrue(test.isAisle(46));
         assertFalse(test.isAisle(7));
         assertFalse(test.isAisle(19));
-
     }
 }

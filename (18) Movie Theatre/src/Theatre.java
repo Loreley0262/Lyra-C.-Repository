@@ -59,6 +59,6 @@ public class Theatre {
 
     //Effects: ret num of remaining seats
     public int getSize(){
-        return seatsRemaining.size() + occupiedSeats.size();
+        return seatsRemaining.size();
     }
 }

@@ -22,7 +22,9 @@ What will methods do?
         IntegerSet intset = new IntegerSet();
         System.out.println(intset.size());
         intset.insert(3);
+        System.out.println(intset.size());
         intset.insert(9);
+        System.out.println(intset.size());
         intset.remove(3);
         System.out.println(intset.size());
         System.out.println(intset.contains(3));
