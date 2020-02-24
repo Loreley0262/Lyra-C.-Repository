@@ -6,5 +6,8 @@ public class sandbox {
         Date date= new java.util.Date();
         System.out.println(date);
 
+        Customer bob = new Customer();
+        bob.deposit(5, date, "checking");
+
     }
 }

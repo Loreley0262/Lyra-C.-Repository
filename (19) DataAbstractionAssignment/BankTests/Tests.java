@@ -10,11 +10,11 @@ public class Tests {
 
     @Before
     public void setUp(){
-
+        Customer test = new Customer();
     }
 
     @Test
-    public void testPurchaseSeat(){
+    public void testWithdrawFromChecking(){
 
     }
 

@@ -10,7 +10,7 @@ public class Main {
         john.raiseSalary();  //changes salary to include raise
         System.out.println("monthly salary w/raise = "+john.getSalary());
         System.out.println("annual salary w/raise = "+john.getAnnualSalary());
-        System.out.println(john.toString());  //the tostring part
+        System.out.println(john);  //the tostring part
 
     }
 }

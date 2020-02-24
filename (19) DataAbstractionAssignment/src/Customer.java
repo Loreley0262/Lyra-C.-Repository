@@ -14,9 +14,15 @@ public class Customer {
     public static final String SAVING = "Saving";
     private final int OVERDRAFT = -100;
 
+    //Default Customer constructor
     Customer(){
-        //create default constructor
+        name = "Bob";
+        accountNumber = 1;
+        checkBalance = 10;
+        savingBalance = 10;
     }
+
+    //Customer constructor
     Customer(String name, int accountNumber, double checkDeposit, double savingDeposit){
         this.name = name;
         this.accountNumber = accountNumber;
@@ -24,18 +30,53 @@ public class Customer {
         this.savingBalance = savingDeposit;
     }
 
+    //Requires: integer amount, date, account
+    //Modifies: checkBalance, savingBalance, deposit intset
+    //Effects: adds amt to balance, stores deposit details in deposit intset
     public double deposit(double amt, Date date, String account){
-        //your code here
-        return 0;
+        deposits.add(new Deposit(amt, date, account));
+        if (account.equals(CHECKING)){
+            checkBalance = checkBalance+amt;
+            return checkBalance;
+        }
+        else if (account.equals(SAVING)){
+            savingBalance = savingBalance+amt;
+            return savingBalance;
+        }
+        else{
+            return 1234;
+        }
     }
+
+    //Requires: integer amount, date, account
+    //Modifies: checkBalance, savingBalance, withdraw intset
+    //Effects: subtracts amt to balance, stores withdraw details in withdraw intset
     public double withdraw(double amt, Date date, String account){
-        //your code here
-        return 0;
+        if (account.equals(CHECKING)){
+            if (checkOverdraft(amt, CHECKING)){
+                checkBalance = checkBalance-amt;
+                return checkBalance;
+            }
+        }
+        else if (account.equals(SAVING)){
+            if (checkOverdraft(amt, SAVING)){
+                savingBalance = savingBalance-amt;
+                return savingBalance;
+            }
+        }
+            return 1234;
     }
     private boolean checkOverdraft(double amt, String account){
-        //your code here
-        return false;
+        if (account.equals("Checking")){
+            return amt<checkBalance;
+        }
+        else{
+            return amt<savingBalance;
+        }
+
     }
+
+
     //do not modify
     public void displayDeposits(){
         for(Deposit d : deposits){
