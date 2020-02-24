@@ -35,6 +35,7 @@ public class Customer {
     //Effects: adds amt to balance, stores deposit details in deposit intset
     public double deposit(double amt, Date date, String account){
         deposits.add(new Deposit(amt, date, account));
+
         if (account.equals(CHECKING)){
             checkBalance = checkBalance+amt;
             return checkBalance;
@@ -64,17 +65,24 @@ public class Customer {
                 return savingBalance;
             }
         }
+
             return 1234;
     }
+
+    //Requires: integer amount, date, account
+    //Effects: if amt-balance is greater than -100, true. else, false.
     private boolean checkOverdraft(double amt, String account){
-        if (account.equals("Checking")){
-            return amt<checkBalance;
+        if (account.equals(CHECKING)){
+            return checkBalance-amt>=OVERDRAFT;
+        }
+        else if (account.equals(SAVING)){
+            return savingBalance-amt>=OVERDRAFT;
         }
         else{
-            return amt<savingBalance;
+            return true;
         }
-
     }
+
 
 
     //do not modify

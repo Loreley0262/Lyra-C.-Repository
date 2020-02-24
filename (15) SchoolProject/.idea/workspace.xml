@@ -88,11 +88,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/School.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+              <folding>
+                <element signature="e#972#973#0" expanded="true" />
+                <element signature="e#1090#1091#0" expanded="true" />
+                <element signature="method#delTeacher#0;class#School#0" />
+                <element signature="method#delStudent#0;class#School#0" />
+                <element signature="method#showTeachers#0;class#School#0" />
+                <element signature="method#showStudents#0;class#School#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,21 +135,6 @@
               <folding>
                 <element signature="e#1220#1221#0" expanded="true" />
                 <element signature="e#1349#1350#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/School.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-              <folding>
-                <element signature="method#delTeacher#0;class#School#0" />
-                <element signature="method#delStudent#0;class#School#0" />
-                <element signature="method#showTeachers#0;class#School#0" />
-                <element signature="method#showStudents#0;class#School#0" />
               </folding>
             </state>
           </provider>
@@ -259,16 +261,15 @@
       <workItem from="1580325177212" duration="844000" />
       <workItem from="1582569691423" duration="873000" />
       <workItem from="1582570694078" duration="32000" />
-      <workItem from="1582570841485" duration="950000" />
+      <workItem from="1582570841485" duration="1393000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11270000" />
+    <option name="totallyTimeSpent" value="11713000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.44474393" visible="true" weight="0.2191977" />
       <window_info id="Structure" order="1" sideWeight="0.55525607" side_tool="true" visible="true" weight="0.2191977" />
@@ -308,6 +309,13 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Course.java" />
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Teacher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -332,21 +340,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/School.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        <state relative-caret-position="391">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
           <folding>
+            <element signature="e#972#973#0" expanded="true" />
+            <element signature="e#1090#1091#0" expanded="true" />
             <element signature="method#delTeacher#0;class#School#0" />
             <element signature="method#delStudent#0;class#School#0" />
             <element signature="method#showTeachers#0;class#School#0" />
             <element signature="method#showStudents#0;class#School#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
         </state>
       </provider>
     </entry>
