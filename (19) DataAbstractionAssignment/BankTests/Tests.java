@@ -1,16 +1,27 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Date;
+
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertFalse;
 import static junit.framework.TestCase.assertTrue;
 
 public class Tests {
-    //make test obj (so customer?)
-
+    Customer test;
+    Date date = new Date();
     @Before
     public void setUp(){
-        Customer test = new Customer();
+        test = new Customer();
+    }
+
+    @Test
+    public void testDepositToChecking(){
+          test.deposit(5, date, "Checking");
+          assertEquals(test.displayDeposits(), 59);
+//        assertTrue(test.isPurchased(10));
+//        test.purchaseSeat(10);
+//        assertEquals(test.getSize(), 59);
     }
 
     @Test
@@ -19,12 +30,13 @@ public class Tests {
     }
 
     @Test
-    public void testSeatsRemaining(){
+    public void testWithdrawFromSaving(){
 
     }
 
+
     @Test
-    public void testIsAisle(){
+    public void testDepositToSaving(){
 
     }
 }

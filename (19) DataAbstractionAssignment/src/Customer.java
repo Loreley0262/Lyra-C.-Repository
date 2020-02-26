@@ -16,6 +16,8 @@ public class Customer {
 
     //Default Customer constructor
     Customer(){
+        deposits = new ArrayList<>(1);
+        withdraws = new ArrayList<>(1);
         name = "Bob";
         accountNumber = 1;
         checkBalance = 10;
@@ -24,6 +26,8 @@ public class Customer {
 
     //Customer constructor
     Customer(String name, int accountNumber, double checkDeposit, double savingDeposit){
+        deposits = new ArrayList<>(1);
+        withdraws = new ArrayList<>(1);
         this.name = name;
         this.accountNumber = accountNumber;
         this.checkBalance = checkDeposit;
@@ -35,8 +39,7 @@ public class Customer {
     //Effects: adds amt to balance, stores deposit details in deposit intset
     public double deposit(double amt, Date date, String account){
         deposits.add(new Deposit(amt, date, account));
-
-        if (account.equals(CHECKING)){
+        if (account.toLowerCase().equals(CHECKING)){
             checkBalance = checkBalance+amt;
             return checkBalance;
         }
@@ -44,10 +47,14 @@ public class Customer {
             savingBalance = savingBalance+amt;
             return savingBalance;
         }
+
         else{
-            return 1234;
+            return amt;
         }
+
     }
+
+
 
     //Requires: integer amount, date, account
     //Modifies: checkBalance, savingBalance, withdraw intset
@@ -56,17 +63,19 @@ public class Customer {
         if (account.equals(CHECKING)){
             if (checkOverdraft(amt, CHECKING)){
                 checkBalance = checkBalance-amt;
-                return checkBalance;
+
             }
+            return checkBalance;
         }
         else if (account.equals(SAVING)){
             if (checkOverdraft(amt, SAVING)){
                 savingBalance = savingBalance-amt;
-                return savingBalance;
             }
+            return savingBalance;
         }
-
+        else{
             return 1234;
+        }
     }
 
     //Requires: integer amount, date, account

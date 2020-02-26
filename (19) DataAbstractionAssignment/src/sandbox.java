@@ -7,7 +7,7 @@ public class sandbox {
         System.out.println(date);
 
         Customer bob = new Customer();
-        bob.deposit(5, date, "checking");
 
+        System.out.println(bob.deposit(5, date, "checking"));
     }
 }
