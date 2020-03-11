@@ -179,7 +179,7 @@
                         </HBox>
                         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="116.0" spacing="10.0">
                            <children>
-                              <Button fx:id="btnEquals" mnemonicParsing="false" prefHeight="63.0" prefWidth="69.0" text="=">
+                              <Button fx:id="btnEquals" mnemonicParsing="false" onAction="#equals" prefHeight="63.0" prefWidth="69.0" text="=">
                                  <font>
                                     <Font size="29.0" />
                                  </font>

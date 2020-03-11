@@ -23,6 +23,7 @@ public class Controller {
     public Label lblTotal;
     public String temp;
     public int num;
+    public int savenum;
 
 
     ArrayList<Integer> ints = new ArrayList<Integer>();
@@ -37,6 +38,7 @@ public class Controller {
             str = str + "" + ints.get(i);
         }
         lblTotal.setText(str);
+        num = Integer.parseInt(str);
     }
 
     public void one(ActionEvent actionEvent) {
@@ -46,6 +48,7 @@ public class Controller {
             str = str + "" + ints.get(i);
         }
         lblTotal.setText(str);
+        num = Integer.parseInt(str);
     }
 
     public void two(ActionEvent actionEvent) {
@@ -55,6 +58,7 @@ public class Controller {
             str = str + "" + ints.get(i);
         }
         lblTotal.setText(str);
+        num = Integer.parseInt(str);
     }
 
     public void three(ActionEvent actionEvent) {
@@ -64,12 +68,27 @@ public class Controller {
             str = str + "" + ints.get(i);
         }
         lblTotal.setText(str);
+        num = Integer.parseInt(str);
     }
 
     public void clr(ActionEvent actionEvent) {
-        lblTotal.setText(Double.toString(0));
+        lblTotal.setText(Integer.toString(0));
         ints.clear();
         operations.clear();
+    }
+
+    public void plus(ActionEvent actionEvent) {
+        savenum = num;
+        operations.add("+");
+    }
+
+    public void equals(ActionEvent actionEvent) {
+
+        for (int i = 0; i<ints.size(); i++){
+            if (operations.get(i).equals("+")){
+                savenum = savenum + num;
+            }
+        }
     }
 
     public void decimal(ActionEvent actionEvent) {
@@ -79,10 +98,5 @@ public class Controller {
 //        temp = lblTotal.toString() + ".";
 //        String str = ".";
 //        lblTotal.setText(temp);
-    }
-
-    public void plus(ActionEvent actionEvent) {
-        num = Integer.parseInt(lblTotal.toString());
-        
     }
 }
